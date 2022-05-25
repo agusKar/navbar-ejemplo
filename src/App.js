@@ -1,23 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
+import NavBar from './components/NavBar'
 function App() {
+  const arreglo = [1, 2, 3]
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <NavBar />
+      <div className="container mt-5 text-center">
+        <div className="row">
+          <div className="col-md-6" id="acaVanLosNumeros">
+            Columna 1
+          </div>
+          <div className="col-md-6">
+            Columna 2
+          </div>
+
+        </div>
+      </div>
     </div>
   );
 }
